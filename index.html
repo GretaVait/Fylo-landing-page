@@ -5,108 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fylo landing page with dark theme and features grid</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/carousel.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="Logo" class="header__logo">
+    <img src="images/logo.svg" alt="Logo" id="logo">
     <nav>
       <ul class="nav__list">
-        <li class="nav--item"><a href="#" class="nav--link"></a>Features</li>
-        <li class="nav--item"><a href="#" class="nav--link"></a>Team</li>
-        <li class="nav--item"><a href="#" class="nav--link"></a>Sign in</li>
+        <li class="nav--item"><a href="#features" class="nav--link">Features</a></li>
+        <li class="nav--item"><a href="#testimonials" class="nav--link">Testimonials</a></li>
+        <li class="nav--item"><a href="#get-demo" class="nav--link">Contact</a></li>
       </ul>
     </nav>
+    <div id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
   </header>
   <main>
-    <section class="introduction">
-      <img src="images/illustration-intro.png" alt="Intro illustration" class="section__img">
-      <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p class="introduction__p">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-      <button class="btn--blue">Get Started</button>
+    <section id="introduction">
+      <div id="intro__content">
+        <h1 class="display1" id="intro--heading">All your files in one secure location, accessible anywhere.</h1>
+        <p class="introduction__p">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+        <button class="btn--blue">Get Started</button>
+        <img src="images/illustration-intro.png" alt="Intro illustration" class="section__img">
+      </div>
     </section>
-    <section class="features">
+
+    <section id="features">
       <div class="features__content">
         <img src="images/icon-access-anywhere.svg" alt="Illustration of devices" class="icon--features">
-        <h3>Access your files, anywhere</h3>
+        <h3 class="display3">Access your files, anywhere</h3>
         <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
       </div>
       <div class="features__content">
         <img src="images/icon-security.svg" alt="Illustration of security" class="icon--features">
-        <h3>Security you can trust</h3>
+        <h3 class="display3">Security you can trust</h3>
         <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
       </div>
       <div class="features__content">
         <img src="images/icon-collaboration.svg" alt="Illustration of figures" class="icon--features">
-        <h3>Real-time collaboration</h3>
+        <h3 class="display3">Real-time collaboration</h3>
         <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
       </div>
-      <div class="features__content">
-        <img src="images/icon-any-file.svg" alt="Illustration of files" class="icon--features">
-        <h3>Store any type of file</h3>
-        <p> Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+    </section>
+
+    <section id="how-it-works">
+      <h2 class="display2">How It Works</h2>
+      <div class="how-it-works__card">
+        <img src="images/illustration-stay-productive.png" alt="Illustration of people working" class="section__img" id="location--img">
+        <div class="description">
+          <h3 class="display3 highlight">Location</h3>
+          <p id="how-it-works__p">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        </div>
+      </div>
+      <div class="how-it-works__card">
+        <img src="images/illustration-stay-productive.png" alt="Illustration of people working" class="section__img" id="share--img">
+        <div class="description">
+          <h3 class="display3 highlight">Share</h3>
+          <p id="how-it-works__p">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        </div>
       </div>
     </section>
-    <section class="shout-out">
-      <img src="images/illustration-stay-productive.png" alt="Illustration of people working" class="section__img">
-      <div class="shout-out__content">
-        <h2>Stay productive, wherever you are</h2>
-        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-        <a href="#" class="shout-out__link">See how Fylo works</a>
+
+    <section id="testimonials">
+      <img src="images/bg-quotes.png" alt="Quotes" class="quotes">
+      <div class="carousel">
+        <div class="carousel__track-container">
+          <ul class="carousel__track">
+            <li class="carousel__slide current-slide">
+                <div class="testimonials__card">
+                  <img src="images/profile-1.jpg" alt="Profile picture" class="user--img">
+                  <span class="user--name">Satish Patel</span>
+                  <span class="user--profession">Founder & CEO, Huddle</span>
+                  <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                </div>
+            </li>
+            <li class="carousel__slide">
+                <div class="testimonials__card">
+                  <img src="images/profile-2.jpg" alt="Profile picture" class="user--img">
+                  <span class="user--name">Bruce McKenzie</span>
+                  <span class="user--profession">Founder & CEO, Huddle</span>
+                  <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                </div>
+            </li>
+            <li class="carousel__slide">
+                <div class="testimonials__card">
+                  <img src="images/profile-3.jpg" alt="Profile picture" class="user--img">
+                  <span class="user--name">Iva Boyd</span>
+                  <span class="user--profession">Founder & CEO, Huddle</span>
+                  <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel__nav">
+          <button class="carousel__index current-slide"></button>
+          <button class="carousel__index"></button>
+          <button class="carousel__index"></button>
+        </div>
       </div>
     </section>
-    <section class="testimonials">
-      <div class="testimonials__card">
-        <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-        <img src="images/profile-1.jpg" alt="Profile picture" class="user--img">
-        <span class="user--name">Satish Patel</span>
-        <span class="user--profession">Founder &amp; CEO, Huddle</span>
-      </div>
-      <div class="testimonials__card">
-        <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-        <img src="images/profile-2.jpg" alt="Profile picture" class="user--img">
-        <span class="user--name">Bruce McKenzie</span>
-        <span class="user--profession">Founder &amp; CEO, Huddle</span>
-      </div>
-      <div class="testimonials__card">
-        <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-        <img src="images/profile-3.jpg" alt="Profile picture" class="user--img">
-        <span class="user--name">Iva Boyd</span>
-        <span class="user--profession">Founder &amp; CEO, Huddle</span>
-      </div>
+
+    <section id="get-demo">
+        <span class="highlight" id="request">Request demo</span>
+        <h1 class="display1">To schedule a product demo with one of our product consultants, please fill in your contact details</h1>
+        <form>
+          <input type="text" id="name" placeholder="Name">
+          <span class="error--text"></span>
+          <input type="email" id="email" placeholder="Email Address">
+          <span class="error--text"></span>
+          <textarea id="message" placeholder="Your Message"></textarea>
+          <button class="btn--blue" id="submit">Submit</button>
+        </form>
+        <div id="contact">
+          <span id="location">500 Terry Francois Street San Francisco, CA 94158</span>
+          <span class="seperation"></span>
+          <span id="phone">+1-543-123-4567</span>
+          <span class="seperation"></span>
+          <span id="mail">example@fylo.com</span>
+        </div>
     </section>
-    <section class="banner">
-      <h2>Get early access today</h2>
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-      <input type="email" placeholder="Email Address">
-      <button class="btn--blue">Get Started For Free</button>
-    </section>
+
   </main>
   <footer>
-    <img src="images/logo.svg" alt="Logo" class="footer__logo">
-    <div class="footer__contact">
-      <span id="location">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-      <span id="phone">+1-543-123-4567</span>
-      <span id="email">example@fylo.com</span>
-    </div>
-    <div class="footer__links">
-      <a href="#" class="link--item">About Us</a>
-      <a href="#" class="link--item">Jobs</a>
-      <a href="#" class="link--item">Press</a>
-      <a href="#" class="link--item">Blog</a>
-    </div>
-    <div class="footer__links">
-      <a href="#" class="link--item">Contact Us</a>
-      <a href="#" class="link--item">Terms</a>
-      <a href="#" class="link--item">Privacy</a>
-    </div>
     <div class="social-media">
       <img src="images/facebook.svg" alt="Facebook" class="social-media__icon">
       <img src="images/twitter.svg" alt="Twitter" class="social-media__icon">
       <img src="images/instagram.svg" alt="instagram"class="social-media__icon">
     </div>
+    <span id="copyright"></span>
   </footer>
+  <script src="js/main.js"></script>
+  <script src="js/validate-form.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>
